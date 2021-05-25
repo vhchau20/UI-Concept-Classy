@@ -37,11 +37,13 @@ class _HomePageState extends State<HomePage> {
                         fontFamily: 'Avenir',
                         fontSize: 44,
                         color: const Color(0xffffffff),
+                        // color: Colors.red,
                         fontWeight: FontWeight.w900,
                       ),
                       textAlign: TextAlign.left,
                     ),
                     DropdownButton(
+                      dropdownColor: Colors.blue,
                       items: [
                         DropdownMenuItem(
                           child: Text(
@@ -49,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                               fontFamily: 'Avenir',
                               fontSize: 24,
-                              color: const Color(0x7cdbf1ff),
+                              color: const Color(0xffffffff),
                               fontWeight: FontWeight.w500,
                             ),
                             textAlign: TextAlign.left,

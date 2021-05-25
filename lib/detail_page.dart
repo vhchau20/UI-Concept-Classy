@@ -59,6 +59,18 @@ class DetailPage extends StatelessWidget {
                         ),
                         SizedBox(height: 32),
                         Divider(color: Colors.black38),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(40.0),
+                          child: Container(
+                            height: 30.0,
+                            width: double.infinity,
+                            color: Colors.orange,
+                            child: Center(
+                              child: new Text("Donate"),
+                            ),
+                          ),
+                        ),
+                        Divider(color: Colors.black38),
                       ],
                     ),
                   ),
