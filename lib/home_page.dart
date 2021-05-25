@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                       items: [
                         DropdownMenuItem(
                           child: Text(
-                            'Solar System',
+                            'Classy Fundraisers',
                             style: TextStyle(
                               fontFamily: 'Avenir',
                               fontSize: 24,
@@ -117,16 +117,16 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
-                                      Text(
-                                        'Solar System',
-                                        style: TextStyle(
-                                          fontFamily: 'Avenir',
-                                          fontSize: 23,
-                                          color: primaryTextColor,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                        textAlign: TextAlign.left,
-                                      ),
+                                      // Text(
+                                      //   'Solar System',
+                                      //   style: TextStyle(
+                                      //     fontFamily: 'Avenir',
+                                      //     fontSize: 23,
+                                      //     color: primaryTextColor,
+                                      //     fontWeight: FontWeight.w500,
+                                      //   ),
+                                      //   textAlign: TextAlign.left,
+                                      // ),
                                       SizedBox(height: 32),
                                       Row(
                                         children: <Widget>[

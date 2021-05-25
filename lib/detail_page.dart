@@ -34,21 +34,21 @@ class DetailPage extends StatelessWidget {
                           ),
                           textAlign: TextAlign.left,
                         ),
-                        Text(
-                          'Solar System',
-                          style: TextStyle(
-                            fontFamily: 'Avenir',
-                            fontSize: 31,
-                            color: primaryTextColor,
-                            fontWeight: FontWeight.w300,
-                          ),
-                          textAlign: TextAlign.left,
-                        ),
+                        // Text(
+                        //   'Solar System',
+                        //   style: TextStyle(
+                        //     fontFamily: 'Avenir',
+                        //     fontSize: 31,
+                        //     color: primaryTextColor,
+                        //     fontWeight: FontWeight.w300,
+                        //   ),
+                        //   textAlign: TextAlign.left,
+                        // ),
                         Divider(color: Colors.black38),
                         SizedBox(height: 32),
                         Text(
                           planetInfo.description ?? '',
-                          maxLines: 5,
+                          maxLines: 10,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                             fontFamily: 'Avenir',
@@ -62,45 +62,46 @@ class DetailPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 32.0),
-                    child: Text(
-                      'Gallery',
-                      style: TextStyle(
-                        fontFamily: 'Avenir',
-                        fontSize: 25,
-                        color: const Color(0xff47455f),
-                        fontWeight: FontWeight.w300,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  Container(
-                    height: 250,
-                    padding: const EdgeInsets.only(left: 32.0),
-                    child: ListView.builder(
-                        itemCount: planetInfo.images.length,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (context, index) {
-                          return Card(
-                            clipBehavior: Clip.antiAlias,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(24),
-                            ),
-                            child: AspectRatio(
-                                aspectRatio: 1,
-                                child: Image.network(
-                                  planetInfo.images[index],
-                                  fit: BoxFit.cover,
-                                )),
-                          );
-                        }),
-                  ),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(left: 32.0),
+                  //   child: Text(
+                  //     'Gallery',
+                  //     style: TextStyle(
+                  //       fontFamily: 'Avenir',
+                  //       fontSize: 25,
+                  //       color: const Color(0xff47455f),
+                  //       fontWeight: FontWeight.w300,
+                  //     ),
+                  //     textAlign: TextAlign.left,
+                  //   ),
+                  // ),
+                  // Container(
+                  //   height: 250,
+                  //   padding: const EdgeInsets.only(left: 32.0),
+                  //   child: ListView.builder(
+                  //       itemCount: planetInfo.images.length,
+                  //       scrollDirection: Axis.horizontal,
+                  //       itemBuilder: (context, index) {
+                  //         return Card(
+                  //           clipBehavior: Clip.antiAlias,
+                  //           shape: RoundedRectangleBorder(
+                  //             borderRadius: BorderRadius.circular(24),
+                  //           ),
+                  //           child: AspectRatio(
+                  //               aspectRatio: 1,
+                  //               child: Image.network(
+                  //                 planetInfo.images[index],
+                  //                 fit: BoxFit.cover,
+                  //               )),
+                  //         );
+                  //       }),
+                  // ),
                 ],
               ),
             ),
             Positioned(
-              right: -64,
+              width: MediaQuery.of(context).size.width,
+              // right: -64,
               child: Hero(
                   tag: planetInfo.position,
                   child: Image.asset(planetInfo.iconImage)),
